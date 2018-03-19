@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Subscriptions Manager for Meteor',
-  version: '1.6.4_2',
+  version: '1.6.4_3',
   git: 'https://github.com/simsim0709/subs-manager.git',
   name: 'thelohoadmin:subs-manager',
 });
@@ -32,7 +32,7 @@ function configurePackage(api) {
   }
 
   api.use(['deps', 'underscore', 'ejson'], ['client', 'server']);
-  api.use('staringatlights:fast-render@2.16.3', 'client', { weak: true });
+  api.use('staringatlights:fast-render@3.0.0', 'client', { weak: true });
 
   api.add_files([
     'lib/sub_manager.js',
